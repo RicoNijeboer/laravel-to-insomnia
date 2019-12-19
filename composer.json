@@ -1,0 +1,33 @@
+{
+    "name": "riconijeboer/laravel-to-insomnia",
+    "description": "This package enables you to convert your Laravel routes to a JSON file which you can import in Insomnia",
+    "type": "library",
+    "license": "MIT",
+    "require": {
+        "ext-json": "*",
+        "illuminate/console": "^6",
+        "illuminate/support": "^6",
+        "illuminate/routing": "^6"
+    },
+    "autoload": {
+        "psr-4":{
+            "Rico\\Insomnia\\": "src/"
+        },
+        "files": [
+            "src/Support.php"
+        ]
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Rico\\Insomnia\\ServiceProvider"
+            ]
+        }
+    },
+    "authors": [
+        {
+            "name": "Rico Nijeboer",
+            "email": "rico@riconijeboer.nl"
+        }
+    ]
+}
